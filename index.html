@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Etch-A-Sketch</title>
 </head>
 <body>
@@ -12,8 +14,25 @@
     </header>
 
     <section class="frame">
-        <div class="grid">
-
+        <div class="title">Click To Draw!</div>
+        <div class="content">
+            <div class="buttons">
+                <button id="clear">Clear</button>
+                <button id="color">Invert</button>
+                <button id="rainbow">Rainbow</button>
+            </div>
+            <div class="grid"></div>
+        </div>
+        <div>
+            <input 
+            type="range" 
+            id="size" 
+            name="size" 
+            min="4" 
+            max="50" 
+            value="16" 
+            onchange="changeSize(this.value)"/>
+            <label for="size">Size</label>
         </div>
     </section>
 
