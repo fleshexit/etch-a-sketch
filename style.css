@@ -61,6 +61,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 4px solid #31708e;
 
 }
 
@@ -75,5 +76,6 @@ button {
     width: 500px;
     height: 500px;
     display: grid;
+    border-left: 4px solid #31708e;
 }
 
