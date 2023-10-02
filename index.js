@@ -16,7 +16,7 @@ function populateGrid(size){
     for (let i = 0; i < totalCells; i++) {
 
         let cell = document.createElement('div');
-        cell.addEventListener('', colourCell);
+        cell.addEventListener('mouseover', colourCell);
         cell.classList.add('cell');
         cell.style.backgroundColor = 'white';
         grid.insertAdjacentElement('beforeend', cell);
@@ -35,6 +35,7 @@ function colourCell(){
             this.style.backgroundColor = colour;
         }
     }
+
 }
 
 function changeColour(choice){
