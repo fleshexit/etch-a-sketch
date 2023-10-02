@@ -1,4 +1,4 @@
-let colour = '#000';
+let colour = 'black';
 
 
 function populateGrid(size){
@@ -16,7 +16,7 @@ function populateGrid(size){
         let cell = document.createElement('div');
         cell.addEventListener('mouseover', colourCell);
         cell.classList.add('cell');
-        cell.style.backgroundColor = '#d5dfe9';
+        cell.style.backgroundColor = 'white';
         grid.insertAdjacentElement('beforeend', cell);
     }
 }
@@ -26,7 +26,11 @@ function changeSize(input){
 }
 
 function colourCell(){
-    this.style.backgroundColor = '#000';
+    this.style.backgroundColor = colour;
+}
+
+function changeColour(choice){
+    colour = choice;
 }
 
 

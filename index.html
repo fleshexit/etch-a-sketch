@@ -17,9 +17,10 @@
         <div class="title">Click To Draw!</div>
         <div class="content">
             <div class="buttons">
-                <button id="clear">Clear</button>
-                <button id="color">Invert</button>
-                <button id="rainbow">Rainbow</button>
+                <button>Clear</button>
+                <button onclick="changeColour('black')">Black</button>
+                <button onclick="changeColour('white')">Eraser</button>
+                <button onclick="changeColour()">Rainbow</button>
             </div>
             <div class="grid"></div>
         </div>
@@ -32,7 +33,7 @@
             max="50" 
             value="16" 
             onchange="changeSize(this.value)"/>
-            <label for="size">Size</label>
+            <label for="size"></label>
         </div>
     </section>
 
