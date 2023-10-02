@@ -1,5 +1,7 @@
-let colour = 'black';
 
+
+let colour = 'black';
+let click = true;
 
 function populateGrid(size){
 
@@ -14,7 +16,7 @@ function populateGrid(size){
     for (let i = 0; i < totalCells; i++) {
 
         let cell = document.createElement('div');
-        cell.addEventListener('mouseover', colourCell);
+        cell.addEventListener('', colourCell);
         cell.classList.add('cell');
         cell.style.backgroundColor = 'white';
         grid.insertAdjacentElement('beforeend', cell);
@@ -26,10 +28,12 @@ function changeSize(input){
 }
 
 function colourCell(){
-    if (colour == 'rainbow'){
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    } else {
-        this.style.backgroundColor = colour;
+    if (click){
+        if (colour == 'rainbow'){
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        } else {
+            this.style.backgroundColor = colour;
+        }
     }
 }
 
