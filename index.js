@@ -26,11 +26,21 @@ function changeSize(input){
 }
 
 function colourCell(){
-    this.style.backgroundColor = colour;
+    if (colour == 'rainbow'){
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = colour;
+    }
 }
 
 function changeColour(choice){
+
     colour = choice;
+}
+
+function clearGrid(){
+    let cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => cell.style.backgroundColor = 'white');
 }
 
 
