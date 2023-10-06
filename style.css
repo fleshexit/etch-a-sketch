@@ -1,3 +1,4 @@
+/* Reset default styles and apply font-family globally */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Body styles */
 body {
     height: 100vh;
     background-color: #f7f9fb;
@@ -12,6 +14,7 @@ body {
     flex-direction: column;
 }
 
+/* Header and Footer styles */
 header,
 footer {
     display: flex;
@@ -29,6 +32,7 @@ footer {
     justify-content: center;
 }
 
+/* Button styles */
 button {
     cursor: pointer;
     border: none;
@@ -43,12 +47,14 @@ button {
     transition: all 0.2s ease-in-out;
 }
 
-.title{
+/* Title styles */
+.title {
     font-weight: 700;
     font-size: 24px;
 }
 
-.frame{
+/* Frame styles */
+.frame {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -57,15 +63,15 @@ button {
     margin: 16px;
 }
 
-.content{
+/* Content styles */
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    
-
 }
 
+/* Buttons container styles */
 .buttons {
     display: flex;
     flex-direction: column;
@@ -74,11 +80,10 @@ button {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.grid{
+/* Grid styles */
+.grid {
     width: 500px;
     height: 500px;
     display: grid;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
 }
-
