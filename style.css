@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #f7f9fb;
+    background-color: #eaeaea;
     display: flex;
     flex-direction: column;
 }
@@ -75,6 +75,7 @@ button:hover {
     height: 100%;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fbfbfb;
 }
 
 .grid {
