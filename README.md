@@ -4,7 +4,7 @@ A simple Etch-a-Sketch web application built with HTML, CSS, and JavaScript.
 
 ## Demo
 
-View the live demo [here](https://chrlie-w.github.io/etch-a-sketch).
+View the live demo [here](https://fleshexit.github.io/etch-a-sketch).
 
 ## Features
 
