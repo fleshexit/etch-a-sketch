@@ -51,4 +51,19 @@ function clearGrid() {
     cells.forEach(cell => cell.style.backgroundColor = 'white');
 }
 
+function generateMinefield() {
+    let cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+        let random = Math.random();
+        if (random < 0.2) {
+            cell.style.backgroundColor = 'black';
+        }
+    });
+}
+
+function openDialog() {
+    const dialog = document.querySelector('.dialog');
+    dialog.showModal();
+}
+
 populateGrid(16);

@@ -8,18 +8,17 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <header>
-        <div id="title">Etch-A-Sketch</div>
-    </header>
-
     <section class="frame">
         <div class="title">Click To Draw!</div>
         <div class="content">
-            <div class="buttons">
-                <button onclick="clearGrid()">Clear</button>
-                <button onclick="changeColour('black')">Black</button>
-                <button onclick="changeColour('white')">Eraser</button>
-                <button onclick="changeColour('rainbow')">Rainbow</button>
+            <div class="sidebar">
+                <div>
+                    <button onclick="clearGrid()">Clear</button>
+                    <button onclick="changeColour('black')">Black</button>
+                    <button onclick="changeColour('white')">Eraser</button>
+                    <button onclick="changeColour('rainbow')">Rainbow</button>
+                </div> 
+                <button onclick="openDialog()">Extra</button>
             </div>
             <div class="grid"></div>
         </div>
@@ -35,9 +34,18 @@
             <label for="size"></label>
         </div>
     </section>
-
+    <dialog class="dialog">
+        <div class="dialog-content">
+            <h2>Maze Generation</h2>
+            <form class="form" action="#" method="dialog">
+                <label for="terrain">Terrain</label>
+                <input type="text" id="terrain">
+                <input type="submit" value="Generate">
+            </form>
+        </div>
+    </dialog>
     <footer>
-        chrlie-w
+        <a href="github.com/fleshexit">Github</a>
     </footer>
     <script src="script.js"></script>
 </body>
